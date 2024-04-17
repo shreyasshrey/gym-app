@@ -148,6 +148,9 @@
     align-items: center;
     padding: 20px 0;
   }
+  .home-blur {
+    width: 200px;
+  }
   .wording-2 {
     font-size: 40px;
   }
