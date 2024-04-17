@@ -1,33 +1,34 @@
-import React from 'react'
-import Home from './Components/Home'
-import Plans from './Components/Plans'
-import Programs from './Components/Programs'
-import ContactUs from './Components/ContactUs'
-import Footer from './Utils/Footer'
+import React, { useState } from "react";
+import Home from "./Components/Home";
+import Plans from "./Components/Plans";
+import Programs from "./Components/Programs";
+import ContactUs from "./Components/ContactUs";
+import Footer from "./Utils/Footer";
 import {
-    FacebookIcon,
-    InstagramIcon,
-    WatsappIcon,
-    YoutubeIcon,
-} from './Utils/icons'
-import Header from './Utils/Header'
+  FacebookIcon,
+  InstagramIcon,
+  WatsappIcon,
+  YoutubeIcon,
+} from "./Utils/icons";
+import Header from "./Utils/Header";
+import Sidebar from "./Utils/Sidebar";
 
 const Routes = () => {
-    return (
-        <div className='app-body'>
-            <div className='social-icons'>
-                <InstagramIcon />
-                <WatsappIcon />
-                <FacebookIcon />
-                <YoutubeIcon />
-            </div>
-            <Header />
-            <Home />
-            <Programs />
-            <Plans />
-            <ContactUs />
-            <Footer />
-            {/* <Switch>
+  const [slider, setSlider] = useState(false);
+
+  return (
+    <div className="app-body">
+      {slider && <Sidebar setSlider={setSlider} />}
+      {/* <div className="social-icons">
+        
+      </div> */}
+      <Header setSlider={setSlider} />
+      <Home />
+      <Programs />
+      <Plans />
+      <ContactUs />
+      <Footer />
+      {/* <Switch>
                 <Route exact path='/' render={() => <Redirect to='/home' />} />
                 <Route exact path='/home' render={() => <Home />} />
                 <Route exact path='/programs' render={() => <Programs />} />
@@ -38,8 +39,8 @@ const Routes = () => {
                     render={() => <Testimonials />}
                 />
             </Switch> */}
-        </div>
-    )
-}
+    </div>
+  );
+};
 
-export default Routes
+export default Routes;

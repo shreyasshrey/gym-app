@@ -8,12 +8,17 @@
 .plan-cards {
   width: 260px;
   padding: 50px 20px;
-  background: var(--appcolor);
+  background: var(--bg-color);
+  color: var(--appcolor);
   cursor: default;
 }
-.plan-cards:hover {
-  background: var(--plancard);
+.plan-cards svg {
+  fill: var(--appcolor);
 }
+/* .plan-cards:hover {
+  background: var(--appcolor);
+  color: var(--bg-color);
+} */
 .plan-cards:hover .join-btn button {
   color: var(--orange);
 }

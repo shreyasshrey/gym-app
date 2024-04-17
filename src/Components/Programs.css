@@ -24,9 +24,13 @@
     flex-direction: column;
     width: 250px;
     height: auto;
-    background: var(--caloriecard);
+    background: #030707;
+    color: #fff;
     padding: 25px;
     cursor: pointer;
+}
+.program-cards svg{
+    fill: var(--appcolor);
 }
 /* .program-cards:hover {
     background: var(--plancard);

@@ -22,7 +22,7 @@ const Footer = () => {
         {
             icon: <MailIcon />,
             label: 'Email',
-            description: ['gym@gmail.com', 'gyms@gmail.com'],
+            description: ['fitlife@gmail.com', 'fitlifes@gmail.com'],
         },
     ]
 
@@ -42,7 +42,7 @@ const Footer = () => {
                     </div>
                 ))}
             </div>
-            <div className='app-title'>My App</div>
+            <div className='app-title'>Fit Life</div>
             {/* <CopyRightIcon /> */}
         </div>
     )
