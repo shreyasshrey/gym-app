@@ -1,12 +1,12 @@
 import React from "react";
-import "./Sidebar.css";
 import {
   CloseIcon,
   FacebookIcon,
   InstagramIcon,
   WatsappIcon,
   YoutubeIcon,
-} from "./icons";
+} from "../../Utils/icons";
+import "./Sidebar.css";
 
 const Sidebar = ({ setSlider }) => {
   const sidebarContent = [
@@ -36,8 +36,8 @@ const Sidebar = ({ setSlider }) => {
           })}
         </div>
         <div className="sidebar-footer">
-          <div className="contact-info">+1 840 841 25 69</div>
-          <div className="mail-info">info@email.com</div>
+          <div className="contact-info">+91 1234567890</div>
+          <div className="mail-info">fitlife@email.com</div>
         </div>
       </section>
     </div>

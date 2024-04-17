@@ -1,0 +1,73 @@
+.plan-card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem 3rem;
+  padding: 30px 0 0 0;
+}
+.plan-cards {
+  width: 280px;
+  padding: 50px 20px;
+  background: var(--bg-color);
+  color: var(--appcolor);
+  cursor: default;
+}
+.plan-cards svg {
+  fill: var(--appcolor);
+}
+/* .plan-cards:hover {
+  background: var(--appcolor);
+  color: var(--bg-color);
+} */
+.plan-cards:hover .join-btn button {
+  color: var(--orange);
+}
+.plan-title {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 2rem;
+}
+.plan-cost {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 5rem;
+}
+.plan-cost span {
+  font-size: 18px;
+}
+.plan-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.plan-benefits {
+  display: flex;
+  align-items: center;
+  line-height: 2rem;
+}
+.plan-benefits span{
+  display: flex
+}
+.plan-benefits svg {
+  margin: 0 10px 0 0;
+  height: 16px;
+  width: 16px;
+}
+.join-btn {
+  text-align: center;
+  line-height: 5rem;
+}
+.join-btn button {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: var(--caloriecard);
+}
+.plan-cards:hover .join-btn button {
+  color: var(--bg-color);
+}
+
+@media screen and (max-width: 768px) {
+}
