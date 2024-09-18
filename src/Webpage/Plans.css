@@ -6,7 +6,11 @@
   padding: 30px 0 0 0;
 }
 .plan-cards {
-  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  width: 300px;
   padding: 50px 20px;
   background: var(--bg-color);
   color: var(--appcolor);
@@ -46,8 +50,8 @@
   align-items: center;
   line-height: 2rem;
 }
-.plan-benefits span{
-  display: flex
+.plan-benefits span {
+  display: flex;
 }
 .plan-benefits svg {
   margin: 0 10px 0 0;
@@ -56,7 +60,7 @@
 }
 .join-btn {
   text-align: center;
-  line-height: 5rem;
+  /* line-height: 5rem; */
 }
 .join-btn button {
   width: 100%;

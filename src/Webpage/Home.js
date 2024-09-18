@@ -1,12 +1,12 @@
-import React from "react";
-import NumberCounter from "number-counter";
+import React from 'react';
+import NumberCounter from 'number-counter';
 
-import { goToContactus } from "./WebpageUtils/HelperFunction";
-import heroimg from "../assets/images/body-pic.jpg";
+import { goToContactus } from './WebpageUtils/HelperFunction';
+import heroimg from '../assets/images/body-pic.jpg';
 // import heart from '../assets/images/heart.png'
 
-import "./Home.css";
-import { HeartIcon } from "../Utils/icons";
+import './Home.css';
+import { HeartIcon } from '../Utils/icons';
 
 const Home = () => {
   return (
@@ -60,10 +60,10 @@ const Home = () => {
           </div>
         </div>
         <div className="get-started">
-          <button onClick={() => goToContactus("contactus")}>
+          <button onClick={() => goToContactus('contactus')}>
             get started
           </button>
-          <button onClick={() => goToContactus("contactus")}>
+          <button onClick={() => goToContactus('contactus')}>
             learn more...
           </button>
         </div>

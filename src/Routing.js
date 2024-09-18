@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
-import Login from "./Authentication/Login";
-import WebpageRouting from "./Webpage/WebpageRouting";
-import ErrorPage from "./ErrorPage/ErrorPage";
+import React, { useState } from 'react';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import Login from './Authentication/Login';
+import WebpageRouting from './Webpage/WebpageRouting';
+import ErrorPage from './ErrorPage/ErrorPage';
+import Modules from './Modules/Modules';
 
 const Routing = () => {
   const [slider, setSlider] = useState(false);
@@ -19,6 +20,12 @@ const Routing = () => {
           <Route exact path="/feature/*" element={<BillingApp />} />
         )} */}
         {/* {loggedIn && <Route exact path="/feature/*" element={<BillingApp />} />} */}
+        <Route
+          exact
+          path="/modules/*"
+          // element={<Login setLoggedIn={setLoggedIn} />}
+          element={<Modules />}
+        />
         <Route
           exact
           path="/login"

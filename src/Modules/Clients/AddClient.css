@@ -1,0 +1,116 @@
+.customer-modal {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.customer-modal-header {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  background: #deebff;
+}
+.customer-modal-header .close-btn svg {
+  cursor: pointer;
+}
+.customer-modal-header .title {
+  width: calc(100% - 25px);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+.customer-modal form {
+  height: calc(100% - 60px);
+  /* padding: 20px; */
+}
+.customer-modal-body {
+  padding: 20px;
+}
+/* .customer-modal-body .add-customer-input {
+    display: flex;
+    flex-direction: column;
+  }
+  .customer-modal-body .add-customer-input label {
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .customer-modal-body .add-customer-input input {
+    height: 40px;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #d1cece;
+  }
+  .customer-modal-body .add-customer-input .select input {
+    height: 36px;
+  }
+  .customer-modal-body .add-customer-input textarea {
+    outline: none;
+    padding: 10px;
+    border: 1px solid #d1cece;
+  } */
+.customer-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  /* position: absolute; */
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+  border-top: 1px solid #d1cece;
+}
+.customer-modal .cancel-customer-btn {
+  font-size: 14px;
+  border: none;
+  background: none;
+}
+.customer-modal .add-customer-btn {
+  width: 150px;
+  display: flex;
+  padding: 8px 10px;
+  background: #0353cc;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: none;
+}
+.select-dropdown {
+  position: absolute;
+  list-style: none;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  transition: 0.5s ease;
+}
+
+.add-modal-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-modal-input label {
+  /* font-weight: 600; */
+  margin-bottom: 6px;
+}
+/* .add-modal-input select, */
+.add-modal-input input {
+  /* height: 40px; */
+  outline: none;
+  padding: 10px;
+  border: 1px solid #d1cece;
+}
+.add-modal-input input:disabled {
+  cursor: not-allowed;
+}
+.add-modal-input .select input {
+  height: 36px;
+}

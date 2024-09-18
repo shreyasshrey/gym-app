@@ -1,6 +1,6 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import "./ErrorPage.css";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './ErrorPage.css';
 
 const ErrorPage = () => {
   let navigate = useNavigate();
@@ -18,7 +18,7 @@ const ErrorPage = () => {
         </div>
         <h2>we are sorry, but the page you requested was not found</h2>
         <div className="back-home-btn">
-          <button onClick={() => navigate("/")}>Go to Home Page</button>
+          <button onClick={() => navigate('/')}>Go to Home Page</button>
         </div>
       </div>
     </div>

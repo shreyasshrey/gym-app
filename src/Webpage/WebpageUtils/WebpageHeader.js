@@ -1,27 +1,27 @@
-import React, { useState } from "react";
-import { Link } from "react-scroll";
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 
-import { BarIcon, SocialIcons } from "../../Utils/icons";
-import "./Header.css";
+import { BarIcon, SocialIcons } from '../../Utils/icons';
+import './WebpageHeader.css';
 
-const Header = ({ setSlider }) => {
+const WebpageHeader = ({ setSlider }) => {
   const [menuOpened, setMenuOpened] = useState(false);
 
   const headings = [
-    { name: "Home", path: "home" },
-    { name: "Programs", path: "programs" },
-    { name: "Plans", path: "plans" },
-    { name: "Contact Us", path: "contactus" },
+    { name: 'Home', path: 'home' },
+    { name: 'Programs', path: 'programs' },
+    { name: 'Plans', path: 'plans' },
+    { name: 'Contact Us', path: 'contactus' },
   ];
 
   return (
-    <div className="header-container">
+    <div className="web-header-container">
       <div className="app-title">Fit Life</div>
       <div className="icon-bar" onClick={() => setMenuOpened(!menuOpened)}>
         <BarIcon />
       </div>
       {menuOpened && (
-        <div className="header-tab-mobile">
+        <div className="web-header-tab-mobile">
           {headings.map((header, index) => {
             return (
               <Link
@@ -39,7 +39,7 @@ const Header = ({ setSlider }) => {
           })}
         </div>
       )}
-      <div className="header-tab">
+      <div className="web-header-tab">
         {headings.map((header, index) => {
           return (
             <Link
@@ -64,4 +64,4 @@ const Header = ({ setSlider }) => {
   );
 };
 
-export default Header;
+export default WebpageHeader;

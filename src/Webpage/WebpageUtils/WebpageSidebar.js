@@ -1,31 +1,31 @@
-import React from "react";
+import React from 'react';
 import {
   CloseIcon,
   FacebookIcon,
   InstagramIcon,
   WatsappIcon,
   YoutubeIcon,
-} from "../../Utils/icons";
-import "./Sidebar.css";
+} from '../../Utils/icons';
+import './WebpageSidebar.css';
 
-const Sidebar = ({ setSlider }) => {
+const WebpageSidebar = ({ setSlider }) => {
   const sidebarContent = [
-    { name: "Instagram", icon: <InstagramIcon /> },
-    { name: "Watsapp", icon: <WatsappIcon /> },
-    { name: "Facebook", icon: <FacebookIcon /> },
-    { name: "YouTube", icon: <YoutubeIcon /> },
+    { name: 'Instagram', icon: <InstagramIcon /> },
+    { name: 'Watsapp', icon: <WatsappIcon /> },
+    { name: 'Facebook', icon: <FacebookIcon /> },
+    { name: 'YouTube', icon: <YoutubeIcon /> },
   ];
 
   return (
-    <div className="sidebar-container">
+    <div className="web-sidebar-container">
       <section>
-        <div className="sidebar-header">
+        <div className="web-sidebar-header">
           <div>Fit Life</div>
           <div className="close-icon" onClick={() => setSlider(false)}>
             <CloseIcon />
           </div>
         </div>
-        <div className="sidebar-body">
+        <div className="web-sidebar-body">
           {sidebarContent.map((social, index) => {
             return (
               <div className="body-section" key={index}>
@@ -35,7 +35,7 @@ const Sidebar = ({ setSlider }) => {
             );
           })}
         </div>
-        <div className="sidebar-footer">
+        <div className="web-sidebar-footer">
           <div className="contact-info">+91 1234567890</div>
           <div className="mail-info">fitlife@email.com</div>
         </div>
@@ -44,4 +44,4 @@ const Sidebar = ({ setSlider }) => {
   );
 };
 
-export default Sidebar;
+export default WebpageSidebar;

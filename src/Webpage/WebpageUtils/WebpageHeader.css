@@ -1,8 +1,8 @@
-.header-container {
+.web-header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 40px;
+  height: 60px;
   /* background-color: rgba(70, 77, 83, 1); */
   position: sticky;
   top: 0;
@@ -21,11 +21,11 @@
 .icon-bar svg {
   width: 30px;
 }
-.header-tab {
+.web-header-tab {
   display: flex;
   gap: 30px;
 }
-.header-tab-mobile {
+.web-header-tab-mobile {
   display: none;
 }
 .app-tab {
@@ -47,14 +47,14 @@
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-  .header-container {
+  .web-header-container {
     position: revert;
     background: none;
   }
-  .header-tab {
+  .web-header-tab {
     display: none;
   }
-  .header-tab-mobile {
+  .web-header-tab-mobile {
     display: flex;
     position: fixed;
     gap: 30px;

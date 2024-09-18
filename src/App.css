@@ -2,9 +2,9 @@
   --lightgray: #d9d9d9;
   --gray: #9c9c9c;
   --bg-color: #ffb500;
-  --bg-color: #E13B3B;
+  --bg-color: #e13b3b;
   --bg-color: #3facf9;
-  --bg-color: #D6FB00;
+  --bg-color: #d6fb00;
   --bg-color: #030707;
   /* --bg-color: #f48915; */
   /* --bg-color: rgb(63, 172, 249); */
@@ -47,7 +47,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: calc(100% - 60px);
+  height: 100%;
+  /* height: calc(100% - 60px); */
   /* overflow: auto; */
 }
 .social-icons {
@@ -83,7 +84,7 @@ body {
 }
 a {
   /* color: #ffffff; */
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .blur {
   background: var(--bg-color);
@@ -102,7 +103,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
-  font-family: "Prompt", sans-serif;
+  font-family: 'Prompt', sans-serif;
 }
 ::-webkit-scrollbar {
   display: none;

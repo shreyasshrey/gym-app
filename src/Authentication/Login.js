@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import Logo from "../assets/images/login-logo.png";
-import "./Login.css";
+import React, { useState } from 'react';
+import Logo from '../assets/images/login-logo.png';
+import './Login.css';
 
 const Login = () => {
-  const [loginDesign, setLoginDesign] = useState("normal");
+  const [loginDesign, setLoginDesign] = useState('normal');
   const [userData, setUserData] = useState({});
 
   const handleChange = (e) => {
@@ -21,7 +21,7 @@ const Login = () => {
         <div className="login-logo">
           <img src={Logo} alt="logo" />
         </div>
-        {loginDesign === "normal" && (
+        {loginDesign === 'normal' && (
           <form className="login-form" onSubmit={handleSubmit}>
             <div className="login-input">
               <label htmlFor="email">Email</label>
@@ -29,7 +29,7 @@ const Login = () => {
                 type="email"
                 name="email"
                 onChange={handleChange}
-                value={userData.email || ""}
+                value={userData.email || ''}
                 required
               />
             </div>
@@ -39,7 +39,7 @@ const Login = () => {
                 type="password"
                 name="password"
                 onChange={handleChange}
-                value={userData.password || ""}
+                value={userData.password || ''}
                 required
               />
             </div>
@@ -47,13 +47,13 @@ const Login = () => {
               <button type="submit">Login</button>
             </div>
             <div className="login-btn-otp">
-              <button onClick={() => setLoginDesign("otpLogin")}>
+              <button onClick={() => setLoginDesign('otpLogin')}>
                 Login with OTP
               </button>
             </div>
           </form>
         )}
-        {loginDesign === "otpLogin" && (
+        {loginDesign === 'otpLogin' && (
           <form className="login-form">
             <div className="login-input">
               <label htmlFor="email">Mobile Number</label>
@@ -61,7 +61,7 @@ const Login = () => {
                 type="number"
                 name="number"
                 onChange={handleChange}
-                value={userData.number || ""}
+                value={userData.number || ''}
                 required
                 // minLength={10}
                 // maxLength={10}
@@ -77,7 +77,7 @@ const Login = () => {
               <button onClick={() => console.log(userData)}>Continue</button>
             </div>
             <div className="login-btn">
-              <button onClick={() => setLoginDesign("normal")}>
+              <button onClick={() => setLoginDesign('normal')}>
                 Login with email
               </button>
             </div>
