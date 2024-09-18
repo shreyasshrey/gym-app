@@ -8,7 +8,6 @@ module.exports = {
     'prettier',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
-  parser: 'babel-eslint',
   plugins: ['react-refresh', 'react', 'prettier'],
   rules: {
     'react/react-in-jsx-scope': 'off',

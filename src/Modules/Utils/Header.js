@@ -1,16 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
-import logo from '../../assets/images/login-logo.png';
+// import logo from '../../assets/images/login-logo.png';
 // import { BarIcon, LogoutIcon, UserProfileIcon } from "../../../Utils/Icons";
 
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import './Header.css';
 
-const Header = ({ isOpen, setIsOpen }) => {
-  let navigate = useNavigate();
+const Header = () => {
+  // let navigate = useNavigate();
   const inputRef = useRef();
 
   const [userOpen, setUserOpen] = useState(false);
-  const [profileImage, setProfileImage] = useState('');
+  // const [profileImage, setProfileImage] = useState('');
 
   /* Commented this line of code for demo purpose */
 
@@ -43,7 +43,7 @@ const Header = ({ isOpen, setIsOpen }) => {
     },
   ];
 
-  const toggle = () => setIsOpen(!isOpen);
+  // const toggle = () => setIsOpen(!isOpen);
   const toggleUser = () => setUserOpen(!userOpen);
 
   const handler = (e) => {

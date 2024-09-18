@@ -6,7 +6,7 @@ import heroimg from '../assets/images/body-pic.jpg';
 // import heart from '../assets/images/heart.png'
 
 import './Home.css';
-import { HeartIcon } from '../Utils/icons';
+// import { HeartIcon } from '../Utils/icons';
 
 const Home = () => {
   return (

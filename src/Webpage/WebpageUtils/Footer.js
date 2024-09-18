@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {
-  CopyRightIcon,
+  // CopyRightIcon,
   LocationIcon,
   MailIcon,
   PhoneIcon,
