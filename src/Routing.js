@@ -7,6 +7,16 @@ import Modules from './Modules/Modules';
 
 const Routing = () => {
   const [slider, setSlider] = useState(false);
+  // import globals from 'globals';
+  // import pluginJs from '@eslint/js';
+  // import pluginReact from 'eslint-plugin-react';
+
+  // export default [
+  //   { files: ['**/*.{js,mjs,cjs,jsx}'] },
+  //   { languageOptions: { globals: globals.browser } },
+  //   pluginJs.configs.recommended,
+  //   pluginReact.configs.flat.recommended,
+  // ];
 
   return (
     <div className="app-body">
