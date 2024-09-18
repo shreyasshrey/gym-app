@@ -28,7 +28,7 @@
     "format:fix": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,html}'",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky || true"
+    "prepare": "husky"
   },
   "eslintConfig": {
     "extends": [
