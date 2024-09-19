@@ -105,7 +105,7 @@ const AddClient = () =>
       const { name, value } = e.target;
       setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
-
+    console.log(formData);
     const cancelCustomer = () => {
       setFormData({
         phoneNumber: '',

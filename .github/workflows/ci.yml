@@ -34,6 +34,9 @@ jobs:
       - name: Run format check
         run: npm run format
 
+      - name: Run Tests
+        run: npm run test
+
       # - name: Check commit messages
       #   uses: wagoid/commitlint-github-action@v3
         # with:
