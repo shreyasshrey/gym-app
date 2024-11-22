@@ -6,6 +6,7 @@
   --bg-color: #3facf9;
   --bg-color: #d6fb00;
   --bg-color: #030707;
+  --bg-color: #f34e3a;
   /* --bg-color: #f48915; */
   /* --bg-color: rgb(63, 172, 249); */
   --darkgray: #464d53;
@@ -16,6 +17,7 @@
     #7d2ffa 100.75%
   );
   /* --appcolor: #3c3f45; */
+  --text-color: #030707;
   --appcolor: #fff;
   /* --gradient-color: linear-gradient(
     90deg,
@@ -87,7 +89,7 @@ a {
   text-decoration: none !important;
 }
 .blur {
-  background: var(--bg-color);
+  background: var(--text-color);
   /* position: absolute; */
   border-radius: 50%;
 }
@@ -97,7 +99,7 @@ a {
 .stroke-text {
   color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #030707;
+  -webkit-text-stroke-color: var(--text-color);
 }
 button {
   cursor: pointer;
@@ -114,5 +116,10 @@ button {
   }
   .wordings {
     font-size: 35px;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .wordings {
+    font-size: 30px;
   }
 }

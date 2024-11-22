@@ -54,33 +54,33 @@ const Plans = () => {
   return (
     <div id="plans" className="section">
       <div className="wordings">
-        <div>
-          Get ready to
-          <span className="stroke-text"> plan </span>with us !
-        </div>
+        find your perfect
+        <span className="stroke-text"> plan </span>
       </div>
       <div className="plan-card-container">
         {planList.map((plan, index) => {
           return (
             <div className="plan-cards" key={index}>
-              <div>
+              <div className="plan-rating">
                 <div className="plan-icon">{plan.icon}</div>
                 <div className="plan-title">{plan.title}</div>
                 <div className="plan-cost">
                   <IndianRupeeIcon />
-                  {plan.cost}/year
+                  <span>{plan.cost}</span>/year
                   {/* <span>{plan.currency}</span> */}
                 </div>
-                <div className="plan-lists">
-                  {plan.benefits.map((benefit, i) => (
-                    <div className="plan-benefits" key={i}>
-                      <span>
-                        <IoMdCheckmarkCircleOutline />
-                      </span>
-                      {benefit}
-                    </div>
-                  ))}
-                </div>
+                {/* <div> */}
+                {/* </div> */}
+              </div>
+              <div className="plan-lists">
+                {plan.benefits.map((benefit, i) => (
+                  <div className="plan-benefits" key={i}>
+                    <span>
+                      <IoMdCheckmarkCircleOutline />
+                    </span>
+                    {benefit}
+                  </div>
+                ))}
               </div>
               <div className="join-btn">
                 <button onClick={() => goToContactus('contactus')}>

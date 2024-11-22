@@ -1,53 +1,38 @@
-import React from 'react';
-
-import {
-  // CopyRightIcon,
-  LocationIcon,
-  MailIcon,
-  PhoneIcon,
-} from '../../Utils/icons';
+import React, { useState } from 'react';
 import './Footer.css';
 
 const Footer = () => {
-  const connectList = [
-    {
-      icon: <LocationIcon />,
-      label: 'Location',
-      description: [
-        // 'C-Block, JP Nagar, Mysuru, Karnataka 570008',
-        'Mysore',
-        'Bangalore',
-      ],
-    },
-    {
-      icon: <PhoneIcon />,
-      label: 'Contact',
-      description: ['1234567890', '0987654321'],
-    },
-    {
-      icon: <MailIcon />,
-      label: 'Email',
-      description: ['fitlife@gmail.com', 'fitlifes@gmail.com'],
-    },
-  ];
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = () => {
+    console.log(email);
+  };
 
   return (
     <div className="footer-container">
       {/* <div className='footer-blur'></div> */}
-      <div className="connect-section">
-        {connectList.map((connect, index) => (
-          <div className="connect-cards" key={index}>
-            {connect.icon}
-            <div className="connect-label">{connect.label}</div>
-            {connect['description'].map((desc, i) => (
-              <div className="connect-description" key={i}>
-                {desc}
-              </div>
-            ))}
-          </div>
-        ))}
+      <div className="footer-logo">fit life</div>
+      <div className="footer-description">
+        Treadmills, stationary bikes, and elliptical machines are commonly used
+        for cardiovascular workouts, helping to improve endurance, burn
+        calories, and enhance heart health.
       </div>
-      <div className="app-title">Fit Life</div>
+      <form onSubmit={handleSubmit} className="connect-section">
+        <input
+          type="email"
+          name="email"
+          onChange={(e) => setEmail(e.target.value)}
+          value={email || ''}
+          required
+          placeholder="Enter your email address..."
+        />
+        <div className="submit-btn">
+          <button type="submit">subscribe</button>
+        </div>
+      </form>
+      <div className="copyright-title">
+        Copyright 2024 Fitlife. All Rights Reserved.
+      </div>
       {/* <CopyRightIcon /> */}
     </div>
   );

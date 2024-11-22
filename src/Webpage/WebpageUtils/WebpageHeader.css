@@ -8,7 +8,8 @@
   top: 0;
   padding: 10px 15px;
   /* background: linear-gradient(90deg, rgb(74 76 78) 33%, rgb(121 121 121) 67%); */
-  background: #fff;
+  background: #000;
+  color: #fff;
   z-index: 10;
 }
 .icon-bar {
@@ -29,21 +30,22 @@
   display: none;
 }
 .app-tab {
-  color: #000;
+  color: #fff;
   padding: 5px 0;
   cursor: pointer;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #000;
 }
 .app-tab:hover {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #ff5757;
   /* color: #f48915; */
   /* border-bottom: 2px solid var(--bg-color);
     padding: 5px 0 3px 0; */
 }
 .app-tab.active {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #ff5757;
 }
 .sidebar-icon svg {
+  fill: #fff;
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
@@ -72,6 +74,7 @@
     /* background-color: var(--appcolor); */
     padding: 5px;
     border-radius: 5px;
+    z-index: 2;
   }
   .sidebar-icon {
     display: none;

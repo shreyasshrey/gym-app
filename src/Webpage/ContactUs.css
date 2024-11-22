@@ -1,32 +1,80 @@
 .contact-container {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  gap: 30px;
+  padding: 6%;
+  position: relative;
+  margin-bottom: -150px;
 }
 .left-container,
 .right-container {
-  flex: 2;
-  padding: 60px 30px;
+  /* flex: 2; */
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.07);
 }
-.right-container {
+.right-container iframe {
+  width: 100%;
+  height: 100%;
   /* background: var(--caloriecard); */
 }
 .left-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 60px 30px;
+  background: #fff;
+  width: 35%;
+}
+.right-container {
+  width: 65%;
 }
 .contact-word1 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--bg-color);
 }
 .contact-word2 {
-  font-size: 20px;
-  margin: 5rem 0 0 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 30px;
+  /* font-size: 20px; */
+  /* margin: 5rem 0 0 0; */
+  /* text-align: center; */
 }
-.input-section {
+.contact-word2 .contact-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact-card .contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color);
+  padding: 5px;
+  height: max-content;
+}
+.contact-card .contact-icon svg {
+  height: 26px;
+  width: 26px;
+  fill: #fff;
+}
+.contact-card .contact-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact-card .contact-text .contact-title {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 18px;
+}
+.contact-card .contact-text .contact-description {
+}
+/* .input-section {
   display: flex;
   flex-direction: column;
   margin: 0 0 20px 0;
@@ -53,11 +101,26 @@
   color: white;
   border-radius: 5px;
   background: var(--bg-color);
-}
+} */
 @media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 0;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.07);
+    padding: 0;
+    margin: 40px 40px -160px 40px;
+    background: #fff;
+  }
   .left-container,
   .right-container {
     padding: 30px 15px;
+    box-shadow: none;
+    align-items: center;
+    width: 100%;
+  }
+  .right-container iframe {
+    height: 400px;
+    /* background: var(--caloriecard); */
   }
   .contact-word1 {
     font-size: 30px;
