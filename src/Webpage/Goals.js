@@ -9,22 +9,22 @@ const Goals = () => {
   const goalList = [
     {
       icon: Goal1,
-      title: 'Basic Plan',
+      title: 'Quality Equipment',
       cost: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aen ean commodo ligula eget dolor.',
     },
     {
       icon: Goal2,
-      title: 'Premium Plan',
+      title: 'Healthy Nutrition Plan',
       cost: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aen ean commodo ligula eget dolor.',
     },
     {
       icon: Goal3,
-      title: 'Gold Plan',
+      title: 'Cardio Training',
       cost: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aen ean commodo ligula eget dolor.',
     },
     {
       icon: Goal4,
-      title: 'Gold Plan',
+      title: 'Unique to Your Needs',
       cost: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aen ean commodo ligula eget dolor.',
     },
   ];
